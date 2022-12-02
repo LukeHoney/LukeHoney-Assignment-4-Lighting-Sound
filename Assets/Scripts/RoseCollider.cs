@@ -6,9 +6,12 @@ public class RoseCollider : MonoBehaviour
 {
     
     public GameObject cheers;
-    //public GameObject cheers1;
-    //public GameObject cheers2;
-    //public GameObject cheers3;
+    public GameObject bekah1;
+    public GameObject bekah2;
+    public GameObject toby1;
+    public GameObject toby2;
+    public GameObject ollie1;
+    public GameObject ollie2;
 
     public ParticleSystem petalParticles;
 
@@ -27,9 +30,9 @@ public class RoseCollider : MonoBehaviour
         {
             Debug.Log("Rose hit singer");
             cheers.SetActive(true);
-            //cheers1.SetActive(true);
-            //cheers2.SetActive(true);
-            //cheers3.SetActive(true);
+            bekah1.SetActive(true);
+            toby1.SetActive(true);
+            ollie1.SetActive(true);
             petalParticles.Play();
         }
     }
