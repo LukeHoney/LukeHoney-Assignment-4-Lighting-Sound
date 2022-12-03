@@ -34,6 +34,15 @@ public class RoseCollider : MonoBehaviour
             toby1.SetActive(true);
             ollie1.SetActive(true);
             petalParticles.Play();
+            StartCoroutine(Wait());
         }
+    }
+    IEnumerator Wait()
+
+    {
+        yield return new WaitForSeconds(8);    //Random.Range(10, 20);
+        bekah1.SetActive(false);
+        toby1.SetActive(false);
+        ollie1.SetActive(false);
     }
 }
