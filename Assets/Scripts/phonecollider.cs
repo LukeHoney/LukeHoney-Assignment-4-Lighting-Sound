@@ -5,14 +5,20 @@ using UnityEngine;
 public class phonecollider : MonoBehaviour
 {
     public GameObject cheers;
-    public GameObject wall;
+    
     public GameObject pinkLights;
     public GameObject whiteLights;
+
+    public ParticleSystem smokeParticles;
+    public ParticleSystem smoke1Particles;
+    public ParticleSystem smoke2Particles;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        smokeParticles.Stop(); 
+        smoke1Particles.Stop();
+        smoke2Particles.Stop();
     }
 
     // Update is called once per frame
@@ -24,12 +30,15 @@ public class phonecollider : MonoBehaviour
     {
         if (other.tag == "Phone")
         {
-            
-
             cheers.SetActive(true);
-            wall.SetActive(true);
+            
             pinkLights.SetActive(true);
-            whiteLights.SetActive(false);
+            whiteLights.SetActive(false);  
+
+            smokeParticles.Play();
+            smoke1Particles.Play();
+            smoke2Particles.Play();
+
             StartCoroutine(Wait());
 
         }
@@ -40,7 +49,12 @@ public class phonecollider : MonoBehaviour
         yield return new WaitForSeconds(8);    //Random.Range(10, 20);
         pinkLights.SetActive(false);
         whiteLights.SetActive(true);
+        
         cheers.SetActive(true);
-        wall.SetActive(false);
+
+        smokeParticles.Stop();
+        smoke1Particles.Stop();
+        smoke2Particles.Stop();
+
     }
 }
