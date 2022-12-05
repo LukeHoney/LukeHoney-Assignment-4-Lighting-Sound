@@ -1,8 +1,15 @@
 # LukeHoney-Assignment-4-Lighting-Sound
 
-The base of the Project was....
+# :microphone: Karaoke Bar
 
-Video to place here
+A virtual karaoke bar for you and your friends to enjoy. Find yourself lost in the sparking lights with singers and dancers. Make sure to have a look and enjoy the disco ball and Vinyl records. If you really enjoy the singer, you can grab a rose on the table and throw it to Adam and listen to the crowd as they roar! Just make sure when you get that phone call to throw it away as no calls allowed.
+
+
+
+https://user-images.githubusercontent.com/115563029/205722723-a38265fa-2fde-429c-9df9-25c8c5ceb45d.mp4
+
+
+
 
 ##  Features:
 ### :rose: Interactable Roses
